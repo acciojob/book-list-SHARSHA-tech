@@ -22,7 +22,7 @@ form.addEventListener('submit',function(event){
 	deleteBtn.addEventListener('click',function(){
 		tbody.removeChild(tr);
 	});
-	td.Delete.appendChild(deleteBtn);
+	tdDelete.appendChild(deleteBtn);
 	tr.appendChild(tdDelete);
 	tbody.appendChild(tr);
 	form.reset();
