@@ -7,14 +7,23 @@ form.addEventListener('submit',function(event){
 	const ISBN = document.getElementById('isbn').value.trim();
 	const tr = document.createElement('tr');
 	const tdTitle = document.createElement('td');
-	td.Title.textContext= title;
+	tdTitle.textContext= title;
 	const tdAuthor=document.createElement('td');
 	tdAuthor.textContext= Author;
 	const tdIsbn = document.createElement('td');
-	td.ISBN.number = ISBN;
+	tdIsbn.number = ISBN;
 	tr.appendChild(tdTitle);
 	tr.appendChild(tdAuthor);
-	tr.appendChild(tdISBN);
+	tr.appendChild(tdIsbn);
+	const tdDelete = document.createElement('td');
+	const deleteBtn = document.createElement('button');
+	deleteBtn.textContent = 'Clear';
+	deleteBtn.classList.add('delete');
+	deleteBtn.addEventListener('click',function(){
+		tbody.removeChild(tr);
+	});
+	td.Delete.appendChild(deleteBtn);
+	tr.appendChild(tdDelete);
 	tbody.appendChild(tr);
 	form.reset();
 })
