@@ -3,7 +3,7 @@ const tbody = document.querySelector('tbody');
 form.addEventListener('submit',function(event){
 	event.preventDefault();
 	const title = document.getElementById('title').value.trim();
-	const author - document.getElementById('author').value.trim();
+	const author = document.getElementById('author').value.trim();
 	const ISBN = document.getElementById('isbn').value.trim();
 	const tr = document.createElement('tr');
 	const tdTitle = document.createElement('td');
