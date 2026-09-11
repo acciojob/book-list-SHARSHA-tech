@@ -17,7 +17,7 @@ form.addEventListener('submit',function(event){
 	tr.appendChild(tdIsbn);
 	const tdDelete = document.createElement('td');
 	const deleteBtn = document.createElement('button');
-	deleteBtn.textContent = 'Clear';
+	deleteBtn.textContext = 'Clear';
 	deleteBtn.classList.add('delete');
 	deleteBtn.addEventListener('click',function(){
 		tbody.removeChild(tr);
