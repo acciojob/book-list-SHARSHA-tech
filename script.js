@@ -11,7 +11,7 @@ form.addEventListener('submit',function(event){
 	const tdAuthor=document.createElement('td');
 	tdAuthor.textContext= Author;
 	const tdIsbn = document.createElement('td');
-	tdIsbn.number = ISBN;
+	tdIsbn.textContext = Isbn
 	tr.appendChild(tdTitle);
 	tr.appendChild(tdAuthor);
 	tr.appendChild(tdIsbn);
